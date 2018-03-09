@@ -1,0 +1,9 @@
+.slider{
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    line-height: 190px;
+}
+.col-md-12{
+    margin: 0;
+}

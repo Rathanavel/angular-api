@@ -1,0 +1,7 @@
+.component-container{
+    width: 100%;
+    background-color: aliceblue;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}

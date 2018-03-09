@@ -1,3 +1,14 @@
 .card{
     text-align: center;
 }
+.footer-container{
+    border-top: 3px solid #333;
+    height: 150px;
+    background-color: #777;
+    text-align: center;
+    line-height: 100px;
+    
+}
+.footer{
+    color: #fff;
+}

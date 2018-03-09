@@ -7,6 +7,7 @@ import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
+import { SocialLoginComponent } from './social-login/social-login.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     QuickLinksComponent,
     NavBarComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    SocialLoginComponent
   ],
   imports: [
     BrowserModule
