@@ -12,10 +12,13 @@ export class EmployeeListComponent implements OnInit {
 
   public employees = [];
 
+  public errorMsg: string;
+
   ngOnInit() {
 
     this._empServices.getOfflineEmployees()
-      .subscribe(data => this.employees = data)
+      .subscribe(data => this.employees = data,
+        error => this.errorMsg = error);
 
   }
 }
