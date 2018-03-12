@@ -1,0 +1,8 @@
+<p>
+  employee-list works!
+</p>
+<ul *ngFor="let emp of employees">
+  <li>
+    <img src="{{emp.picture}}" />
+    {{emp.name.last + ',' + emp.name.first + '- balance: ' + emp.balance }}</li>
+</ul>

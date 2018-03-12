@@ -1,0 +1,5 @@
+.nav-item .active{
+    background: #777;
+    color: #fff;    
+    transition: background 1s;
+}
