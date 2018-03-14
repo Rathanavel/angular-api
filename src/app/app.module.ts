@@ -18,6 +18,13 @@ import { DbService } from './shared/db.service';
 import { HttpClientModule } from "@angular/common/http";
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgProgressModule, NgProgressInterceptor } from 'ngx-progressbar';
+import { WeatherListComponent } from './weather-list/weather-list.component';
+import { WeatherService } from './shared/weather.service';
+
+import { FormsModule }   from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,14 +37,17 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     routingComponents,
     HomeComponent,
     PageNotFoundComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    WeatherListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgProgressModule,
+    FormsModule
   ],
-  providers: [DbService],
+  providers: [DbService, { provide: HTTP_INTERCEPTORS, useClass: NgProgressInterceptor, multi: true }, WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

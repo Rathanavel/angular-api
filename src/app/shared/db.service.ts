@@ -19,7 +19,7 @@ export class DbService {
     { "id": 5, "name": "Rathanavel5", "age": 58 }]
   }
 
-  public _urlOnline: string = 'https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="nome, ak")&format=json&env=store://datatables.org/alltableswithkeys';
+  public _urlOnline: string = 'https://query.yahooapis.com/v1/public/yql?qselect * from weather.forecast where woeid in (select woeid from geo.places(1) where text="nome, ak")&format=json&env=store://datatables.org/alltableswithkeys';
 
   public getOnlineEmployees() {
     //return this.http.get(this._url);
@@ -37,6 +37,11 @@ export class DbService {
 
   public errorHandler(error: HttpErrorResponse) {
     return Observable.throw(error.message || "Random server error");
+  }
+
+  public slowUrl ='http://slowwly.robertomurray.co.uk/delay/3000/url/https://jsonplaceholder.typicode.com/posts/1';
+  public getSlowData() {
+    return this.http.get(this._urlOnline)
   }
 
 }
