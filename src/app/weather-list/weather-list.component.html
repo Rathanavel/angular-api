@@ -3,10 +3,10 @@
 </p>
 <div class="row">
   <div class="col-sm-8">
-    <input type="text" [(ngModel)]="txtCity" placeholder="Enter city name" class="txt-city" (keyup.enter)="getWetherInfo(txtCity)" />
+    <input type="text" #txtCityID placeholder="Enter city name" class="txt-city" (keyup.enter)="getWetherInfo(txtCityID)" />
   </div>
   <div class="col-sm-4">
-    <button class="btn btn-info" (click)="getWetherInfo(txtCity)">Search</button>
+    <button class="btn btn-info" (click)="getWetherInfo(txtCityID)">Search</button>
   </div>
 </div>
 {{weatherInfo}}
