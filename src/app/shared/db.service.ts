@@ -27,7 +27,7 @@ export class DbService {
     return this.http.get<IEmployee[]>(this._urlOnline);
   }
 
-  public _urlJson: string = "assets/data/employees.json";
+  public _urlJson: string = "/assets/data/employees.json";
 
   public getOfflineEmployees(): Observable<IEmployee[]> {
     return this.http.get<IEmployee[]>(this._urlJson)
