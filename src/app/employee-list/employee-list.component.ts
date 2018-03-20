@@ -4,7 +4,7 @@ import { DbService } from '../shared/db.service';
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
-  styleUrls: ['./employee-list.component.css']
+  styleUrls: ['./employee-list.component.css']  
 })
 export class EmployeeListComponent implements OnInit {
 
@@ -17,8 +17,11 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit() {
 
     this._empServices.getOfflineEmployees()
-      .subscribe(data => this.employees = data,
-        error => this.errorMsg = error);
+      .subscribe(data => {
+        this.employees = data,
+          error => this.errorMsg = error;
+        console.log(data)
+      });
 
   }
 }

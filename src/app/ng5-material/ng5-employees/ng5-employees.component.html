@@ -1,0 +1,30 @@
+<p>
+  ng5-employees works!
+</p>
+{{errorMsg}}
+<!-- <mat-grid-list cols="2" rowHeight="100px;">
+    <mat-grid-tile *ngFor="let emp of employees"> -->
+      <ul>
+        <li *ngFor="let emp of employees">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar style="background-image:url('{{emp.picture}}');background-size: cover;"></div>
+                  <mat-card-title>{{emp.name.last + ',' + emp.name.first}}</mat-card-title>
+                  <mat-card-subtitle>{{emp.company}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{emp.picture}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{emp.about}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card>
+        </li>
+      </ul>
+     
+    <!-- </mat-grid-tile>
+  </mat-grid-list> -->

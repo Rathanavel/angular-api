@@ -1,0 +1,39 @@
+<div class="wrapper">
+
+  <div *ngIf="!detailedCountry">loading...</div>
+  <div [@countryAnimation]="move">
+    <div class="clash-card archer" *ngIf="detailedCountry">
+      <div class="clash-card__image clash-card__image--archer">
+        <img src="{{detailedCountry.flag}}" alt="archer" />
+      </div>
+      <div class="clash-card__level clash-card__level--archer">{{detailedCountry.name}}</div>
+      <div class="clash-card__unit-name">{{detailedCountry.capital}}</div>
+      <div class="clash-card__unit-description">
+        {{detailedCountry.subregion}}, With the population of {{detailedCountry.population}}.
+        <br> Lat: {{detailedCountry.latlng[0]}} - Lon: {{detailedCountry.latlng[1]}}
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+        <div class="one-third">
+          <div class="stat">{{detailedCountry.callingCodes}}
+            <sup style="display: none;">S</sup>
+          </div>
+          <div class="stat-value">IST</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">{{detailedCountry.currencies[0].symbol}}</div>
+          <div class="stat-value">{{detailedCountry.currencies[0].code}}</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">{{detailedCountry.latlng}}</div>
+          <div class="stat-value">Lat:Lon</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- end clash-card archer-->
+</div>

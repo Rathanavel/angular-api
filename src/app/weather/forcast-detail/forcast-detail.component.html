@@ -1,0 +1,22 @@
+<div class="container">
+  <div *ngIf="!forcastDetails">loading...</div>
+  <div *ngIf="forcastDetails">
+    <div [@forcastAnimation]="forcastDetails.query.results.channel.item.forecast.length">
+      <div class="element-card" *ngFor="let day of forcastDetails.query.results.channel.item.forecast | slice:0:5; let lst = last">
+        <span *ngIf='!lst'>{{ lst ? assignEvent() : '' }}</span>
+        <div class="front-facing">
+          <h1 class="abr">{{day.day}}</h1>
+          <p class="title">{{day.date}}</p>
+          <span class="atomic-number" style="display: none;">29</span>
+          <span class="atomic-mass">{{day.text}}</span>
+        </div>
+        <div class="back-facing">
+          <!-- <p [innerHTML]="forcastDetails.query.results.channel.item.description"></p> -->
+          <p>
+            <a class="btn" href="https://en.wikipedia.org/wiki/Copper" target="_blank">More info</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

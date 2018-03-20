@@ -1,0 +1,13 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { CountryDetailComponent } from "../country-detail/country-detail.component";
+
+@NgModule({
+  imports: [
+    CommonModule,
+    
+  ],
+  declarations: [CountryDetailComponent]
+})
+export class WeatherLazyModule { }

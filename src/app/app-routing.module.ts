@@ -4,14 +4,16 @@ import { DepartmentListComponent } from './department-list/department-list.compo
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { WeatherListComponent } from './weather-list/weather-list.component';
+// import { WeatherListComponent } from './weather-list/weather-list.component';
+import { WeatherLandingComponent } from "./weather/weather-landing/weather-landing.component";
+import { Ng5LandingComponent } from './ng5-material/ng5-landing/ng5-landing.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'departments', component: DepartmentListComponent },
-    { path: 'employees', component: EmployeeListComponent },
-    { path: 'weather', component: WeatherListComponent },
+    { path: 'employees', component: Ng5LandingComponent },
+    { path: 'weather', component: WeatherLandingComponent },
     { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -22,4 +24,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, DepartmentListComponent, EmployeeListComponent, WeatherListComponent]
+export const routingComponents = [HomeComponent, DepartmentListComponent, EmployeeListComponent, WeatherLandingComponent, Ng5LandingComponent]

@@ -1,0 +1,19 @@
+.demo-tab-group {
+    border: 1px solid #e8e8e8;
+  }
+  
+  .demo-tab-content {
+    padding: 16px;
+  }
+  
+  header {
+    
+    padding-top: 50px;
+    height: 100px;
+    text-align: center;
+}
+
+header a{
+  font-size: x-large;
+  color: #fff;
+}

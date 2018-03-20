@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div style="background:#3f51b5">
+<app-ng5-topnav></app-ng5-topnav>
+<header>
+  <a target="_blank" href="https://material.angular.io" mat-button>Site designed based on Angular Material 2.0 beta</a> 
+</header>
+</div>
+<mat-card>
+  <mat-card-content>
+    <h2 class="example-h2" style="display: none;">Tabs with icon labels</h2>
+    <mat-tab-group class="demo-tab-group">
+      <mat-tab label="Tab 1" matTooltip="Employee list" matTooltipPosition="below">
+        <ng-template mat-tab-label matTooltip="Employee list" matTooltipPosition="below">
+          <mat-icon matTooltip="Employee list" matTooltipPosition="below">account_box</mat-icon>
+        </ng-template>
+        <div class="demo-tab-content">
+          <app-ng5-employees></app-ng5-employees>
+        </div>
+      </mat-tab>
+      <mat-tab label="Tab 2">
+        <ng-template mat-tab-label>
+          <mat-icon matTooltip="Check Weather details" matTooltipPosition="below">explore</mat-icon>
+        </ng-template>
+        <div class="demo-tab-content">
+          <app-ng5-weather></app-ng5-weather>
+        </div>
+      </mat-tab>
+      <mat-tab label="Tab 3">
+          <ng-template mat-tab-label>
+            <mat-icon matTooltip="Check country details" matTooltipPosition="below">flight_takeoff</mat-icon>
+          </ng-template>
+          <div class="demo-tab-content">
+            <app-ng5-countries></app-ng5-countries>
+          </div>
+        </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->

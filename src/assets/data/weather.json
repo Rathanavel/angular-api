@@ -1,0 +1,149 @@
+{
+    "query": {
+        "count": 1,
+        "created": "2018-03-15T19:33:13Z",
+        "lang": "en-US",
+        "results": {
+            "channel": {
+                "units": {
+                    "distance": "mi",
+                    "pressure": "in",
+                    "speed": "mph",
+                    "temperature": "F"
+                },
+                "title": "Yahoo! Weather - London, England, GB",
+                "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-44418/",
+                "description": "Yahoo! Weather for London, England, GB",
+                "language": "en-us",
+                "lastBuildDate": "Thu, 15 Mar 2018 07:33 PM GMT",
+                "ttl": "60",
+                "location": {
+                    "city": "London",
+                    "country": "United Kingdom",
+                    "region": " England"
+                },
+                "wind": {
+                    "chill": "45",
+                    "direction": "100",
+                    "speed": "11"
+                },
+                "atmosphere": {
+                    "humidity": "82",
+                    "pressure": "988.0",
+                    "rising": "0",
+                    "visibility": "16.1"
+                },
+                "astronomy": {
+                    "sunrise": "6:16 am",
+                    "sunset": "6:5 pm"
+                },
+                "image": {
+                    "title": "Yahoo! Weather",
+                    "width": "142",
+                    "height": "18",
+                    "link": "http://weather.yahoo.com",
+                    "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                },
+                "item": {
+                    "title": "Conditions for London, England, GB at 07:00 PM GMT",
+                    "lat": "51.506401",
+                    "long": "-0.12721",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-44418/",
+                    "pubDate": "Thu, 15 Mar 2018 07:00 PM GMT",
+                    "condition": {
+                        "code": "27",
+                        "date": "Thu, 15 Mar 2018 07:00 PM GMT",
+                        "temp": "48",
+                        "text": "Mostly Cloudy"
+                    },
+                    "forecast": [
+                        {
+                            "code": "12",
+                            "date": "15 Mar 2018",
+                            "day": "Thu",
+                            "high": "54",
+                            "low": "47",
+                            "text": "Rain"
+                        },
+                        {
+                            "code": "28",
+                            "date": "16 Mar 2018",
+                            "day": "Fri",
+                            "high": "55",
+                            "low": "44",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "23",
+                            "date": "17 Mar 2018",
+                            "day": "Sat",
+                            "high": "42",
+                            "low": "31",
+                            "text": "Breezy"
+                        },
+                        {
+                            "code": "23",
+                            "date": "18 Mar 2018",
+                            "day": "Sun",
+                            "high": "34",
+                            "low": "30",
+                            "text": "Breezy"
+                        },
+                        {
+                            "code": "30",
+                            "date": "19 Mar 2018",
+                            "day": "Mon",
+                            "high": "43",
+                            "low": "30",
+                            "text": "Partly Cloudy"
+                        },
+                        {
+                            "code": "28",
+                            "date": "20 Mar 2018",
+                            "day": "Tue",
+                            "high": "46",
+                            "low": "37",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "28",
+                            "date": "21 Mar 2018",
+                            "day": "Wed",
+                            "high": "49",
+                            "low": "32",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "26",
+                            "date": "22 Mar 2018",
+                            "day": "Thu",
+                            "high": "51",
+                            "low": "38",
+                            "text": "Cloudy"
+                        },
+                        {
+                            "code": "28",
+                            "date": "23 Mar 2018",
+                            "day": "Fri",
+                            "high": "51",
+                            "low": "42",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "11",
+                            "date": "24 Mar 2018",
+                            "day": "Sat",
+                            "high": "51",
+                            "low": "40",
+                            "text": "Showers"
+                        }
+                    ],
+                    "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/27.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Thu - Rain. High: 54Low: 47\n<BR /> Fri - Mostly Cloudy. High: 55Low: 44\n<BR /> Sat - Breezy. High: 42Low: 31\n<BR /> Sun - Breezy. High: 34Low: 30\n<BR /> Mon - Partly Cloudy. High: 43Low: 30\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-44418/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n<BR />\n]]>",
+                    "guid": {
+                        "isPermaLink": "false"
+                    }
+                }
+            }
+        }
+    }
+}
