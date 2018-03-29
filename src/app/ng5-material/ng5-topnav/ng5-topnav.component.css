@@ -1,7 +1,9 @@
 nav a.active{
     /* background: #777; */
-    color: #fff;    
+    color: deeppink;    
     transition: background 1s;
+    background-color:darkturquoise;
+    padding:5px 0;
 }
 nav a{
     /* background: #777; */

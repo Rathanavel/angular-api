@@ -25,11 +25,11 @@ export class WeatherService {
   }
 
   getEmployees() {
-    return this.http.get("assets/data/employees.json");
+    return this.http.get("data/employees.json");
   }
 
   getCities() {
-    return this.http.get<any>("assets/data/city.list.json");
+    return this.http.get<any>("data/city.list.json");
   }
 
   // Get detailed country informations.

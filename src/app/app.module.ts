@@ -12,7 +12,6 @@ import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
-import { SocialLoginComponent } from './social-login/social-login.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DbService } from './shared/db.service';
@@ -42,6 +41,12 @@ import { Ng5EmployeesComponent } from './ng5-material/ng5-employees/ng5-employee
 import { Ng5WeatherComponent } from './ng5-material/ng5-weather/ng5-weather.component';
 import { Ng5CountriesComponent } from './ng5-material/countries/ng5-countries/ng5-countries.component';
 
+// Material CSS site
+import { LoginLandingComponent } from './material-login/login-landing/login-landing.component';
+import { SignUpComponent } from './material-login/sign-up/sign-up.component';
+import { SignInComponent } from './material-login/sign-in/sign-in.component';
+import { SocialLoginComponent } from "./material-login/social-login/social-login.component";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +68,10 @@ import { Ng5CountriesComponent } from './ng5-material/countries/ng5-countries/ng
     Ng5EmployeesComponent,
     Ng5WeatherComponent,
     Ng5TopnavComponent,
-    Ng5CountriesComponent
+    Ng5CountriesComponent,
+    LoginLandingComponent,
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
